@@ -30,7 +30,7 @@ namespace GFramework.data.handlers
             var converted = converter.Convert(Command.Entity);
             var dapperRepository = CommandProcessor.UnityContainer.Resolve<IDefaultDomainRepository>();
 
-            dapperRepository.Update(converted);
+            dapperRepository.Delete(converted);
             return true;
         }
     }
