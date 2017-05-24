@@ -12,7 +12,7 @@ namespace GFramework.data.handlers
     /// Please note this command's DTO input is automatically converted to a Domain object to validate business rules 
     /// </summary>
     /// <typeparam name="T">Object to delete from database</typeparam>
-    public class DeleteEntityHandler<T>: ICommandHandler<DeleteEntityCommand<T>> where T : IEntity
+    public class DeleteEntityHandler<T>: IDeleteCommandHandler<T> where T : IEntity
     {
         public bool Execute(DeleteEntityCommand<T> Command, ICommandProcessor CommandProcessor)
         {

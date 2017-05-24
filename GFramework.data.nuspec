@@ -9,7 +9,7 @@
     <projectUrl>http://www.bytegiant.com/gframework</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Software Development Framework that takes some concepts from CQRS and DDD and allows for a very streamlined version of those concepts</description>
-    <releaseNotes>- Generic Commands and Command Handlers to enable RAD development when using the framework</releaseNotes>
+    <releaseNotes>- Added Generic CUD Command Handler Specific Interfaces (to help with unity's automatic registration) </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Development Framework DDD CQRS Commands Queries</tags>
   </metadata>

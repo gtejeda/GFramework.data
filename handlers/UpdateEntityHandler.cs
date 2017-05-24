@@ -12,7 +12,7 @@ namespace GFramework.data.handlers
     /// Please note this command's DTO input is automatically converted to a Domain object to validate business rules 
     /// </summary>
     /// <typeparam name="T">Object to update in database</typeparam>
-    public class UpdateEntityHandler<T>: ICommandHandler<UpdateEntityCommand<T>> where T : IEntity
+    public class UpdateEntityHandler<T>: IUpdateCommandHandler<T> where T : IEntity
     {
         public bool Execute(UpdateEntityCommand<T> Command, ICommandProcessor CommandProcessor)
         {

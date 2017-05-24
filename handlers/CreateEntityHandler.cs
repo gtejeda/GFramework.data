@@ -12,7 +12,7 @@ namespace GFramework.data.handlers
     /// Please note this command's DTO input is automatically converted to a Domain object to validate business rules 
     /// </summary>
     /// <typeparam name="T">Object to Insert into Database</typeparam>
-    public class CreateEntityHandler<T>: ICommandHandler<CreateEntityCommand<T>> where T : IEntity
+    public class CreateEntityHandler<T>: ICreateCommandHandler<T> where T : IEntity
     {
         public bool Execute(CreateEntityCommand<T> Command, ICommandProcessor CommandProcessor)
         {
